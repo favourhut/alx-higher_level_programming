@@ -4,8 +4,10 @@ if __name__ == "__main__":
     a = len(argv) - 1
     if a < 1:
         print('{} arguments.'.format(a))
-    elif a >= 1:
+    elif a <= 1:
+        print('{} argument:'.format(a))
+    elif a > 2:
         print('{} arguments:'.format(a))
 
-        for i in range(a):
+    for i in range(a):
             print('{}: {:s}'.format(i + 1, argv[i + 1]))
