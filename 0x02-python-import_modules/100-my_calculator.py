@@ -22,4 +22,4 @@ if __name__ == "__main__":
         print(f'{a} {sign} {b} = {sub(a, b)}')
     else:
         print('Unknown operator. Available operators: +, -, * and /')
-    exit(1)
+        exit(1)
