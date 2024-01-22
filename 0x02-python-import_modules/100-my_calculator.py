@@ -4,7 +4,7 @@ if __name__ == "__main__":
     from sys import argv
 
     arg_Len = len(argv)
-    if arg_Len != 3:
+    if arg_Len != 4:
         print('Usage: ./100-my_calculator.py <a> <operator> <b>')
         exit(1)
 
