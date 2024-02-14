@@ -1,0 +1,37 @@
+This function would prints My name is <first name> <last name>
+
+=================================
+
+The name of the function is 'say_my_name'
+
+=====
+
+Importing module from function file
+
+::
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("James", "Favour")
+    My name is James Favour
+
+The parameters ``first_name`` and ``last_name``` must be strings. Otherwise,
+a TypeError is raised.
+
+::
+
+    >>> say_my_name(6, "James")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Print the firt and last name if strings
+::
+
+    >>> say_my_name("To", "Jasper")
+    My name is To Jasper
+
+This can also print the first name
+::
+
+    >>> say_my_name("Beta")
+    My name is Beta 
+
