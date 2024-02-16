@@ -1,0 +1,38 @@
+The print square function
+
+Importing module:
+	>>> print_square = __import__('4-print_square').print_square
+
+Usage
+=== 
+	>>> print_square(-7.5)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+When size is < 0 (size = -1)
+
+::
+	>>> print_square(-1)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+IF size is a float and < 0 (size = -3.4)
+
+::
+	>>> print_square(-3.4)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+When the value zero is passed, it return an empty line (size = 0)
+
+::
+	>>> print_square(None)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Size must be an integer (size = 'Hello')
+
+::
+	>>> print_square(-7)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
