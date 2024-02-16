@@ -1,9 +1,3 @@
-This file shows you how to use the 0-add_integer file
-
-==================
-The 0-add_ineger module takes two value (int/float) as arguments and retutn the int value
-=======
-
 Importing functioin from the module:
 	>>> add_integer = __import__('0-add_integer').add_integer
 
