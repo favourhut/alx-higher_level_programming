@@ -1,0 +1,48 @@
+This file shows you how to use the 0-add_integer file
+
+==================
+The 0-add_ineger module takes two value (int/float) as arguments and retutn the int value
+=======
+
+Importing functioin from the module:
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+usage
+
+Adding two positive integers (a = 2 and b = 4)
+	>>> add_integer(2, 4)
+	6
+
+Adding two positive floats (a = 2.4 and b = 4.0)
+	>>> add_integer(2.4, 4.0)
+	6
+
+Adding one positive and one negative int (a = 8 and b = -2)
+	>>> add_integer(8, -2)
+	6
+
+Adding one positive float and one negative float (a = 2 and b = -8.2)
+	>>> add_integer(2, -8.2)
+	-6
+
+Adding two negative int (a = -2 and b = -4)
+	>>> add_integer(-2, -4,)
+	-6
+
+Adding a number and a string (a = 2 and b = 'Hello')
+	>>> add_integer(2, 'Hello')
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+Adding a string as first input (a = 'Hello' and b = 4)
+	>>> add_integer('Hello', 4)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Passing no input or arguments
+	>>> add_integer(None)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
