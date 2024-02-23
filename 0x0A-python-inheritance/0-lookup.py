@@ -2,9 +2,11 @@
 
 """
 
-This function returns a list of all avialable attributes in an object
+This module returns a list of all avialable attributes in an object
 
 """
 
+
 def lookup(obj):
-    return(dir(list))
+    """Thsi function does the above module description"""
+    return dir(list)
