@@ -1,0 +1,29 @@
+This is a test case for task 01
+=======================
+
+This module would print a list of int in a sorted manner
+
+==================
+
+Importing the module for a unit test:
+
+	>>> MyList = __import__('1-my_list').MyList
+
+-------------------------------------
+
+From main file:
+	>>> my_list = MyList()
+	
+
+Appending int:
+	>>> my_list.append(1)
+	>>> my_list.append(3)
+	>>> my_list.append(2)
+	>>> my_list.append(5)
+	>>> my_list.append(4)
+	>>> print (my_list)
+	[1, 3, 2, 5, 4]
+
+Sorting int:
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
