@@ -6,7 +6,7 @@ This module prints a list but in ascending order
 """
 
 
-class MyList(list):
+class MyList(obj):
 
     """This functioin inhereit from list class"""
     def print_sorted(self):
