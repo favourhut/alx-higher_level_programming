@@ -10,9 +10,9 @@ returns the number of characters written
 
 def write_file(filename="", text=""):
 
-    """Using withi to make sure the file is auto closed"""
+    """Using with to make sure the file is auto closed"""
 
-    with open(filename, 'w' encoding='UTF_8') as fileName:
+    with open(filename, 'w', encoding='UTF_8') as fileName:
 
         """Returning the number of test inputed"""
-        fileName.write(text)
+        return fileName.write(text)
