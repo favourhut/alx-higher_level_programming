@@ -7,6 +7,7 @@ returns the number of characters written
 
 """
 
+
 def write_file(filename="", text=""):
 
     """Using withi to make sure the file is auto closed"""
