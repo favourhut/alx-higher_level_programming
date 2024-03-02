@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 """
+
 A function that writes an ogject to a text file using
 JSON representation
 
