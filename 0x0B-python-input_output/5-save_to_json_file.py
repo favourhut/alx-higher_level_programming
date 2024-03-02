@@ -2,7 +2,7 @@
 
 """
 
-A function that writes an ogject to a text file using
+A function that writes an object to a text file using
 JSON representation
 
 """
@@ -16,4 +16,4 @@ def save_to_json_file(my_obj, filename):
     with open(filename 'w') as json_file:
 
         """returing the object file to text file"""
-        json.dumps(my_obj, json_file)
+        json.dump(my_obj, json_file)
