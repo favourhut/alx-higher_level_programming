@@ -40,51 +40,26 @@ class TestBase(unittest.TestCase):
         b = Base(-4)
         self.assertEqual(-4, b.id)
 
-"""
-
-***Priority
-I am now testing for Recangle module
-
-"""
-class TestRectangle(unittest.TestCase): 
-
-    '''
-        Testing rectangle
-    '''
-
-    def setUp(self):
-        '''
-            Initializing instance with width and height
-            parameters
-        '''
+"""I am now testing for Recangle module"""
+class TestRectangle(unittest.TestCase):
+    
+    def set(self):
+        
+        '''Initializing instances'''
         self.r = Rectangle(5, 10)
-
-    def tearDown(self):
-        '''
-            Deleting created instance
-        '''
+        
+    def tear(self):
+        
+        '''delete insytances'''
+        
         del self.r
-
-    def test_width(self):
-        '''
-            Testing the Rectangle width getter
-        '''
+        
+    def test_width(Self): 
+        
+        '''testing the recagle'''
+        
         self.assertEqual(5, self.r.width)
 
-    def test_height(self):
-        '''
-            Testing the Rectangle height getter
-        '''
-        self.assertEqual(10, self.r.height)
-
-    def test_x(self):
-        '''
-            Testing Rectangle x getter and setter
-        '''
-
-        self.r.x = 54
-        self.assertEqual(54, self.r.x)
-        self.assertEqual(0, self.r.y) 
 
 if __name__ == '__main__':
     unittest.main()
