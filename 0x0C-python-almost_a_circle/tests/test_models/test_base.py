@@ -58,7 +58,7 @@ class TestRectangle(unittest.TestCase):
         
         '''testing the recagle'''
         
-        self.assertEqual(5, self.r.width)
+        self.assertEqual(5, r.width)
 
 
 if __name__ == '__main__':
