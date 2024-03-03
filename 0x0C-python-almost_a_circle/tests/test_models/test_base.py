@@ -46,18 +46,45 @@ class TestBase(unittest.TestCase):
 I am now testing for Recangle module
 
 """
-class TestRectangle(unittest.TestCase):
+class TestRectangle(unittest.TestCase): 
 
-    def test_width(self):
+    '''
+        Testing rectangle
+    '''
 
-        rect = Rectangle(2, 3, 4, 5, -6)
-        self.assertEqual(rect.id, -6)
-        
+    def setUp(self):
+        '''
+            Initializing instance with width and height
+            parameters
+        '''
+        self.r = Rectangle(5, 10)
+
+    def tearDown(self):
+        '''
+            Deleting created instance
+        '''
+        del self.r
+
     def test_width(self):
         '''
             Testing the Rectangle width getter
         '''
-        self.assertEqual(5, self.r.width)    
+        self.assertEqual(5, self.r.width)
+
+    def test_height(self):
+        '''
+            Testing the Rectangle height getter
+        '''
+        self.assertEqual(10, self.r.height)
+
+    def test_x(self):
+        '''
+            Testing Rectangle x getter and setter
+        '''
+
+        self.r.x = 54
+        self.assertEqual(54, self.r.x)
+        self.assertEqual(0, self.r.y) 
 
 if __name__ == '__main__':
     unittest.main()
