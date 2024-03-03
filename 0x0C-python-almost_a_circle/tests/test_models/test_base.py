@@ -52,6 +52,12 @@ class TestRectangle(unittest.TestCase):
 
         rect = Rectangle(2, 3, 4, 5, -6)
         self.assertEqual(rect.id, -6)
+        
+    def test_width(self):
+        '''
+            Testing the Rectangle width getter
+        '''
+        self.assertEqual(5, self.r.width)    
 
 if __name__ == '__main__':
     unittest.main()
