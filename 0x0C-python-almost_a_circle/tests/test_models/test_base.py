@@ -42,12 +42,33 @@ class TestBase(unittest.TestCase):
 
 """I am now testing for Recangle module"""
 class TestRectangle(unittest.TestCase):
-   
-    def test_width(Self): 
-        
-        '''testing the rectagle'''
-        
-        self.assertEqual(5, self.r.width)
+    def test_constructor(self):
+        rectangle = Rectangle(10, 20, 5, 10, 1)
+        self.assertEqual(rectangle.width, 10)
+        self.assertEqual(rectangle.height, 20)
+        self.assertEqual(rectangle.x, 5)
+        self.assertEqual(rectangle.y, 10)
+        self.assertEqual(rectangle.id, 1)
+
+    def test_width_setter(self):
+        rectangle = Rectangle(10, 20)
+        rectangle.width = 15
+        self.assertEqual(rectangle.width, 15)
+
+    def test_height_setter(self):
+        rectangle = Rectangle(10, 20)
+        rectangle.height = 25
+        self.assertEqual(rectangle.height, 25)
+
+    def test_x_setter(self):
+        rectangle = Rectangle(10, 20)
+        rectangle.x = 5
+        self.assertEqual(rectangle.x, 5)
+
+    def test_y_setter(self):
+        rectangle = Rectangle(10, 20)
+        rectangle.y = 10
+        self.assertEqual(rectangle.y, 10)
 
 
 if __name__ == '__main__':
