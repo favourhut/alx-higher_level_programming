@@ -53,8 +53,5 @@ class TestRectangle(unittest.TestCase):
         rect = Rectangle(2, 3, 4, 5, -6)
         self.assertEqual(rect.id, -6)
 
-
-===========
-
 if __name__ == '__main__':
     unittest.main()
