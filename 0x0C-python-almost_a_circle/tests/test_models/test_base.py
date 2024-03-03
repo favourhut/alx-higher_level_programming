@@ -46,7 +46,7 @@ class TestRectangle(unittest.TestCase):
     def set(self):
         
         '''Initializing instances'''
-        self.r = Rectangle(5, 10)
+        r = Rectangle(5, 10)
         
     def tear(self):
         
