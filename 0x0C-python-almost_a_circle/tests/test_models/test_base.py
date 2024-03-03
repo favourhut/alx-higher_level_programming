@@ -42,23 +42,12 @@ class TestBase(unittest.TestCase):
 
 """I am now testing for Recangle module"""
 class TestRectangle(unittest.TestCase):
-    
-    def set(self):
-        
-        '''Initializing instances'''
-        r = Rectangle(5, 10)
-        
-    def tear(self):
-        
-        '''delete insytances'''
-        
-        del self.r
-        
+   
     def test_width(Self): 
         
-        '''testing the recagle'''
+        '''testing the rectagle'''
         
-        self.assertEqual(5, r.width)
+        self.assertEqual(5, self.r.width)
 
 
 if __name__ == '__main__':
