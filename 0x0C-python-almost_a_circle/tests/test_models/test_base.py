@@ -75,6 +75,6 @@ class TestRectangle(unittest.TestCase):
         rectangle = Rectangle(10, 20)
         rectangle.y = 10
         self.assertEqual(rectangle.y, 10)
-
+        
 if __name__ == '__main__':
     unittest.main()
