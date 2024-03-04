@@ -40,14 +40,10 @@ class TestBase(unittest.TestCase):
         b = Base(-4)
         self.assertEqual(-4, b.id)
 
-"""I am now testing for Recangle module"""
-
-
 
 class TestRectangle(unittest.TestCase):
-    
-    '''Creating test files for the module Rectanlge'''
-    
+
+    '''Creating test files for the module Rectanlge'''    
     def test_constructor(self):
         rectangle = Rectangle(10, 20, 5, 10, 1)
         self.assertEqual(rectangle.width, 10)
@@ -78,4 +74,3 @@ class TestRectangle(unittest.TestCase):
         
 if __name__ == '__main__':
     unittest.main()
-    
