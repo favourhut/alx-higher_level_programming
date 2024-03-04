@@ -43,8 +43,6 @@ class TestBase(unittest.TestCase):
 
 class TestRectangle(unittest.TestCase):
 
-    '''Creating test files for the module Rectanlge'''    
-    
     def test_constructor(self):
         rectangle = Rectangle(10, 20, 5, 10, 1)
         self.assertEqual(rectangle.width, 10)
@@ -52,16 +50,17 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(rectangle.x, 5)
         self.assertEqual(rectangle.y, 10)
         self.assertEqual(rectangle.id, 1)
-        
+
     def test_width_setter(self):
         rectangle = Rectangle(10, 20)
         rectangle.width = 15
-        self.assertDictEqual(rectangle.width, 15)
-        
+        self.assertEqual(rectangle.width, 15)
+
     def test_height_setter(self):
         rectangle = Rectangle(10, 20)
         rectangle.height = 25
         self.assertEqual(rectangle.height, 25)
-        
+
+
 if __name__ == '__main__':
     unittest.main()
