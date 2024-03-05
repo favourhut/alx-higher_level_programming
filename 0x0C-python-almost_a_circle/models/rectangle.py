@@ -31,9 +31,7 @@ class Rectangle(Base):
         '''Assigning a setter method'''
 
         if (type(value) is not (int):
-                raise TypeError('{} must be an integer'.format(value)
-        
-        if value <= 0:
+                raise TypeError('{} must be an integer'.format(value))
 
 
         self.__width = value
