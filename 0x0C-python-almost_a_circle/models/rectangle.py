@@ -50,10 +50,10 @@ class Rectangle(Base):
         '''setter hieght'''
         
         if (type(value) is not (int)):
-                raise TypeError('Hwight must be an integer')
+                raise TypeError('height must be an integer')
                 
         if value <= 0:
-            raise ValueError('Height must be > 0')
+            raise ValueError('height must be > 0')
 
         self.__width = value       
         self.__height = value
@@ -69,7 +69,7 @@ class Rectangle(Base):
 
         '''Setting x'''
         if value < 0:
-            raise ValueError('x must be > = 0')
+            raise ValueError('x must be >= 0')
         
         self.__x = value
 
