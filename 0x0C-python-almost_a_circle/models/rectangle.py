@@ -18,7 +18,7 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-i    '''Creating the getter and setter method'''
+    '''Creating the getter and setter method'''
     @property
     def width(self):
 
