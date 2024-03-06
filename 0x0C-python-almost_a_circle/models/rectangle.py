@@ -50,7 +50,7 @@ class Rectangle(Base):
     def height(self, value):
 
         '''setter height'''
-        if (type(value) is not int)):
+        if (type(value) is not (int)):
             '''validating attributes'''
             raise TypeError('height must be an integer')
 
