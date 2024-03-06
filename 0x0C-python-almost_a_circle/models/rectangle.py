@@ -18,7 +18,7 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-    '''Creating the getter and setter method'''
+i    '''Creating the getter and setter method'''
     @property
     def width(self):
 
@@ -30,9 +30,9 @@ class Rectangle(Base):
 
         '''Assigning a setter method'''
 
-        if (type(value) is not (int)):
-                raise TypeError('width must be an integer')
-                
+        if type(value) is not int:
+            raise TypeError('width must be an integer')
+
         if value <= 0:
             raise ValueError('width must be > 0')
 
@@ -48,14 +48,12 @@ class Rectangle(Base):
     def height(self, value):
 
         '''setter height'''
-        
-        if (type(value) is not (int)):
-                raise TypeError('height must be an integer')
-                
+        if type(value) is not int:
+            raise TypeError('height must be an integer')
+
         if value <= 0:
             raise ValueError('height must be > 0')
 
-        self.__width = value       
         self.__height = value
 
     @property
@@ -68,12 +66,11 @@ class Rectangle(Base):
     def x(self, value):
 
         '''Setting x'''
-        if (type(value)is not(int)):
+        if type(value) is not int:
             raise TypeError('x must be an integer')
-        
         if value < 0:
             raise ValueError('x must be >= 0')
-        
+
         self.__x = value
 
     @property
@@ -85,9 +82,9 @@ class Rectangle(Base):
     def y(self, value):
 
         '''Setting for y'''
-        if (type(value)is not(int)):
+        if type(value) is not int:
             raise TypeError('y must be a integer')
-        
+
         if value < 0:
             raise ValueError('y must be >= 0')
         self.__y = value
