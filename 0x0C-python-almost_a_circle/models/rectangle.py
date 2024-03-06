@@ -96,3 +96,10 @@ class Rectangle(Base):
             '''validating attributes'''
             raise ValueError('y must be >= 0')
         self.__y = value
+
+    ''' adding the public method def area(self)'''
+    def area(self):
+
+        '''returns the aeea value of the 
+        class rec'''
+        return (self.__width * self.__height)
