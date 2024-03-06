@@ -30,7 +30,7 @@ i    '''Creating the getter and setter method'''
 
         '''Assigning a setter method'''
 
-        if type(value) is not int:
+        if (type(value) is not (int)):
             raise TypeError('width must be an integer')
 
         if value <= 0:
@@ -48,7 +48,7 @@ i    '''Creating the getter and setter method'''
     def height(self, value):
 
         '''setter height'''
-        if type(value) is not int:
+        if (type(value) is not int)):
             raise TypeError('height must be an integer')
 
         if value <= 0:
@@ -66,7 +66,7 @@ i    '''Creating the getter and setter method'''
     def x(self, value):
 
         '''Setting x'''
-        if type(value) is not int:
+        if (type(value) is not (int)):
             raise TypeError('x must be an integer')
         if value < 0:
             raise ValueError('x must be >= 0')
@@ -82,7 +82,7 @@ i    '''Creating the getter and setter method'''
     def y(self, value):
 
         '''Setting for y'''
-        if type(value) is not int:
+        if (type(value) is not (int)):
             raise TypeError('y must be a integer')
 
         if value < 0:
