@@ -100,6 +100,6 @@ class Rectangle(Base):
     ''' adding the public method def area(self)'''
     def area(self):
 
-        '''returns the aeea value of the 
+        '''returns the aeea value of the
         class rec'''
         return (self.__width * self.__height)
