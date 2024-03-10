@@ -113,7 +113,10 @@ class Rectangle(Base):
             return
 
         [print("") for y in range(self.y)]
+        '''adding a comment here'''
         for h in range(self.height):
+            '''a comment here'''
             [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for w in range(self.width)]
+            '''print empty line'''
             print("")
