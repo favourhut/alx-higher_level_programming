@@ -103,3 +103,13 @@ class Rectangle(Base):
         '''returns the aeea value of the
         class rec'''
         return (self.__width * self.__height)
+
+    '''adding the public method display'''
+    def display(self):
+
+        '''prints the to stdout the # char'''
+        for i in range(self.__height):
+            print(' ', end="")
+            for y in range(self.width):
+                print('#', end="")
+        print()
