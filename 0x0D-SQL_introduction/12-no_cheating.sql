@@ -2,4 +2,4 @@
 -- not allowed to use Bob’s id value, only the name field
 UPDATE TABLE second_table
 SET score = 10
-WHERE name = Bob;
+WHERE name = "Bob";
