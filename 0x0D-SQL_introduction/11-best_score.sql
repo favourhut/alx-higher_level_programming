@@ -1,2 +1,2 @@
--- Select and order by score
-SELECT score, name FROM second_table ORDER BY score >= 10 DESC;
+-- Select and order by score >=
+SELECT score, name FROM second_table ORDER BY score >= 10;
