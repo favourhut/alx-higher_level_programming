@@ -1,6 +1,6 @@
 #!/usr/bin/node
 //Creating an empty class
 
-class Rectangle {
-
+let rectangle = class Rectangle {
+    constructor(rectangle);
 }
