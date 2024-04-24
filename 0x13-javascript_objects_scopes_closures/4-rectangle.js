@@ -23,8 +23,8 @@ class Rectangle {
 
     // instance method that multiples the width and the height by 2
     double() {
-        this.width * 2;
-        this.height * 2;
+        this.width *= 2;
+        this.height *= 2;
     }
 }
 
