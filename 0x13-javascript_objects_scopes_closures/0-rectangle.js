@@ -1,4 +1,6 @@
 #!/usr/bin/node
-//Creating an empty class with reff
+class Rectangle {
 
-module.export = class Rectangle {};
+}
+
+module.export = Rectangle;
