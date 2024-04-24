@@ -6,4 +6,4 @@ class Square extends require('./4-rectangle.js') {
     }
 }
 
-module.exports = Rectangle;
+module.exports = Square;
