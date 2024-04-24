@@ -12,9 +12,9 @@ class Rectangle {
         for (let i = 0; i = (this.width); i++) {
             let symbol = '';
             for (let j = 0; j = (this.height); j++) {
-                symbol += 'X'
+                symbol += 'X';
             }
-            console.log(symbol)
+            console.log(symbol);
         }
     }
 }
