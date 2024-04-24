@@ -9,7 +9,7 @@ class Rectangle {
 
     // an instance method that prints the rectangle via character X
     print() {
-        for (let i = 0; i < (this.width); i++) {
+        for (let i = 0; i < this.width; i++) {
             console.log('X'.repeat(this.height));
         }
     }
