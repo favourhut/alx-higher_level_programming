@@ -16,7 +16,7 @@ if __name__ == "__main__":
             password=sys.argv[2], database=sys.argv[3], port="3306")
     
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    db_cursor.execute("SELECT * FROM states")
     
     all_rows = db_cursor.fetchall()
     
