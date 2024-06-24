@@ -22,3 +22,6 @@ all_rows = db_cursor.fetchall()
     
 for states_row in all_rows:
     print(states_row)
+    
+db_cursor.close()
+all_rows.close()
