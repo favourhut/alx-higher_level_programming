@@ -22,5 +22,6 @@ if __name__ == "__main__":
     for all_rows in fetch_rows:
         print(all_rows)
         
+    """Closing all objects"""    
     dbase_cursor.close()
     data_base.close()
