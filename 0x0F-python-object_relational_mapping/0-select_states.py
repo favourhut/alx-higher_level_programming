@@ -5,6 +5,7 @@ import MySQLdb
 import sys
 
 
+"""This script lists all states from the database hbtn_0e_0_usa"""
 if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", username=sys.argv[1], 
                         password=sys.argv[2], database=sys.argv[3], 
