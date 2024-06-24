@@ -14,6 +14,7 @@ states from the database named"""
 import MySQLdb
 from sys import argv
 
+
 if __name__ == "__main__":
     """This script takes 3 arguments: 
     mysql username, mysql password and database name.
