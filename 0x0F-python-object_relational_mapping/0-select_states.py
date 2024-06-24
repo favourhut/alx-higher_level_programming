@@ -13,6 +13,7 @@ if __name__ == "__main__":
 listAll = db.cusor()
 listAll.execute("SELECT * FROM states")
 rows = listAll.fetchall()
+
 for row in rows:
     print(row)
 
