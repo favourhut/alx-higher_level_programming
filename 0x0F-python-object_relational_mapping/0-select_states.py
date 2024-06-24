@@ -14,6 +14,7 @@ listAll = db.cusor()
 listAll.execute("SELECT * FROM states")
 rows = listAll.fetchall()
 
+"""Iterating through rows"""
 for row in rows:
     print(row)
 
