@@ -11,7 +11,7 @@ if __name__ == "__main__":
                         port="3306")
 
 listAll = db.cusor()
-listAll.execute("SELECT * FROM states")
+listAll.execute("SELECT * FROM states OEDER BY id ASC")
 rows = listAll.fetchall()
 
 """Iterating through rows"""
