@@ -24,7 +24,7 @@ if __name__ == "__main__":
         database=argv[3])
     
     dbase_cursor = data_base.cursor()
-    dbase_cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    dbase_cursor.execute("SELECT * FROM states")
     
     fetch_rows = dbase_cursor.fetchall()
     
