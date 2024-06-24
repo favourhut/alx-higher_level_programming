@@ -15,10 +15,10 @@ if __name__ == "__main__":
             host="localhost", username=sys.argv[1],
             password=sys.argv[2], database=sys.argv[3], port="3306")
     
-    db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states")
+db_cursor = db.cursor()
+db_cursor.execute("SELECT * FROM states")
     
-    all_rows = db_cursor.fetchall()
+all_rows = db_cursor.fetchall()
     
-    for states_row in all_rows:
-        print(states_row)
+for states_row in all_rows:
+    print(states_row)
