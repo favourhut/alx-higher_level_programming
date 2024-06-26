@@ -12,7 +12,7 @@ if __name__ == "__main__":
     """
     db = MySQLdb.connect(
         host="localhost", port="3306", username=argv[1], password=argv[2],
-        databse=agv[3])
+        databse=argv[3])
     
     """adding cursor and rules"""
     db_cursor = db.cursor()
