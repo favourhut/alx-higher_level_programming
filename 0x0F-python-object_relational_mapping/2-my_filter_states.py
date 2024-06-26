@@ -13,16 +13,14 @@ if __name__ == "__main__":
     hbtn_0e_0_usa where name matches
     the argument.
     """
-    db = MySQLdb.connect(
-        host="localhost", port=3306, username=argv[1],
+    cont = MySQLdb.connect(
+        host="localhost", port=3306, user=argv[1],
         password=argv[2], database=argv[3])
-    
-    db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states WHERE states LIKE '{}'"
-                   "ORDER BY states.id ASC".format(argv[4]))
-    
-    all = db_cursor.fetchall()
-    for i in all:
-        print(i)
-    db_cursor.close()
-    db.close()
+    cursor = cont.cursor()
+    cursor.execute(
+            "SELECT * FROM states WHERE name LIKE"
+            " '{:s}' ORDER BY id ASC".format(argv[4]))
+    db = cursor.fetchall()
+    for i in db:
+        if i[1] == argv[4]:
+            print(i)
