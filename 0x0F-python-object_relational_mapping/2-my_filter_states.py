@@ -22,7 +22,8 @@ if __name__ == "__main__":
                             " ORDER BY id ASC".format(argv[4]))
     var_name = database_cursor.fecthall()
     for i in var_name:
-        print(i)
+        if i[1] == argv[4]:
+            print(i)
         
     database_cursor.close()
     database.close()
