@@ -14,11 +14,11 @@ if __name__ == "__main__":
     the argument.
     """
     db = MySQLdb.connect(
-        host="localhost", port=3306, username=argv[1],
-        password=argv[2], database=argv[3])
+        host="localhost", port=3306, user=argv[1],
+        passwd=argv[2], db=argv[3])
     
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states WHERE states LIKE BINARY {}"
+    db_cursor.execute("SELECT * FROM states WHERE name LIKE BINARY {}"
                       .format(argv[4]))
     
     all_states = db_cursor.fetchall()
