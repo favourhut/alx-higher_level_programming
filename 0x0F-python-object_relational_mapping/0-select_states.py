@@ -16,12 +16,9 @@ if __name__ == "__main__":
     
     """adding cursor and rules"""
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    db_cursor.execute("SELECT * FROM states")
     db_fetch = db_cursor.fetchall()
     
     """Iterating though db_fetch"""
     for all_rows in db_fetch:
         print(all_rows)
-        
-    db_cursor.close()
-    db.close()
