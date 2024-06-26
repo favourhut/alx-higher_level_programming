@@ -4,7 +4,7 @@ the states table of hbtn_0e_0_usa
 where name matches the argument"""
 
 import MySQLdb
-from sys import argv
+import sys
 
 
 if __name__ == "__main__":
@@ -14,15 +14,17 @@ if __name__ == "__main__":
     the argument.
     """
     db = MySQLdb.connect(
-        host="localhost", port=3306, user=argv[1],
-        passwd=argv[2], db=argv[3])
+        host="localhost", port=3306, user=sys.argv[1],
+        passwd=sys.argv[2], db=sys.argv[3])
     
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
-                      .format(argv[4]))
+    db_cursor.execute("SELECT * FROM states WHERE name LIKE \
+                      BINARY '{}' ORDER BY states.id ASC"
+                      .format(sys.argv[4]))
     
     all_states = db_cursor.fetchall()
     for states in all_states:
         print(states)
+        
     db_cursor.close()
     db.close()
