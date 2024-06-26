@@ -11,7 +11,7 @@ if __name__ == "__main__":
     including passwords and username
     """
     db = MySQLdb.connect(
-        host="localhost", port="3306", username=argv[1], password=argv[2],
+        host="localhost", port=3306, username=argv[1], password=argv[2],
         databse=argv[3])
     
     """adding cursor and rules"""
