@@ -3,7 +3,7 @@
 the states table of hbtn_0e_0_usa 
 where name matches the argument"""
 
-import MySQLdb as db
+import MySQLdb
 from sys import argv
 
 
@@ -13,18 +13,16 @@ if __name__ == "__main__":
     hbtn_0e_0_usa where name matches
     the argument.
     """
-    database = db.connect(
+    db = MySQLdb.connect(
         host="localhost", port=3306, username=argv[1],
-        password=argv[2], dbase=argv[3])
+        password=argv[2], database=argv[3])
     
-    database_cursor = database.cursor()
-    database_cursor.execute("SELECT * FROM states WHERE name LIKE '{:s}'"
-                            " ORDER BY id ASC".format(argv[4]))
+    db_cursor = db.cursor()
+    db_cursor.execute("SELECT * FROM states WHERE states LIKE '{}'"
+                   "ORDER BY states.id ASC".format(argv[4]))
     
-    var_name = database_cursor.fetchall()
-    for i in var_name:
-        if i[1] == argv[4]:
-            print(i)
-        
-    database_cursor.close()
-    database.close()
+    all = db_cursor.fetchall()
+    for i in all:
+        print(i)
+    db_cursor.close()
+    db.close()
