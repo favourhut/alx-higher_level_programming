@@ -4,9 +4,9 @@ https://alx-intranet.hbtn.io/status"""
 
 if __name__ == '__main__':
     
-    import urllib.request as model
+    import urllib.request
     
-    with model.urlopen('https://alx-intranet.hbtn.io/status') as response:
+    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
         res_result = response.read()
         print('Body response:')
         print('\t- type: {}'.format(type(res_result)))
