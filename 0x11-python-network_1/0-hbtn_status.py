@@ -9,6 +9,6 @@ if __name__ == '__main__':
     with model.urlopen('https://alx-intranet.hbtn.io/status') as response:
         res_result = response.read()
         print('Body response:')
-        print('\t - type: {}'.format(type(res_result)))
-        print('\t - content: {}'.format(res_result))
-        print('\t - utf8 content: {}'.format(res_result.decode('utf-8')))
+        print('\t- type: {}'.format(type(res_result)))
+        print('\t- content: {}'.format(res_result))
+        print('\t- utf8 content: {}'.format(res_result.decode('utf-8')))
