@@ -1,5 +1,13 @@
 #!/usr/bin/node
-const variable = require('variable');
-variable.readFile(process.argv[2], 'utf8', function (error, content) {
-  console.log(error || content);
+// A script that reads and prints out the content of a file
+
+const file = process.argv[2];
+const fs = require('fs');
+
+fs.readFile(file, 'utf8', (error, data) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(data);
+  }
 });
