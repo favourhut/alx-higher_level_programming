@@ -5,4 +5,4 @@ def print_last_digit(number):
             return a
         else:
             result = a % 10
-            return result
+        return result
