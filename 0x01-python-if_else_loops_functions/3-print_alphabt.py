@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-for a in range(97, 123):
-    if (a == 101) or (a == 113):
+"""This code print the ancii alphabet, in lowercase.
+ommits letter q and e
+"""
+for alphabet in range(97, 112):
+    if (alphabet == 101) or (alphabet == 113):
         continue
-    print(chr(a).format(), end='')
+    """continue ommits alphabet q and e"""
+    print(chr(alphabet).format(), end='')
