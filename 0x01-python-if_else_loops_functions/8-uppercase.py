@@ -4,5 +4,5 @@ def uppercase(str):
         if 97 <= ord(letters) <= 122:
             storedLowerCase = letters - 32
             print({}.format(storedLowerCase))
-        print({letters})
+        print({}.format(letters))
     
