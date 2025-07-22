@@ -6,3 +6,4 @@
 class Square:
     """Represents an empty class"""
     pass
+
